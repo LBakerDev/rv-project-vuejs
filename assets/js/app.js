@@ -202,5 +202,11 @@ new Vue({
                 }
             }
         ]
+    },
+    methods: {
+
+    },
+    computed:{
+        
     }
 })

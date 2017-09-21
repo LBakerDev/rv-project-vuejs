@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="vue-animate.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
-        
-        
 
-    </head>
-    <body>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="vue-animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
 
-        <div id="vue-app">
-          
-            <div class="providers">
 
-                <div class="box one">
+
+</head>
+
+<body>
+
+    <div id="vue-app">
+
+        <div class="providers">
+
+            <!--Card-->
+            <div v-for="dealer in dealers">
+                <div class="card">
+
+                    <!--Card image-->
+                    <h4 class="card-title">{{ dealer.data.name }}</h4>
+                    <hr>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
 
                 </div>
-
+                <!--/.Card-->
 
             </div>
-          
-            
         </div>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
-        <script src="assets/js/app.js"></script>
-     </body>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
 </html>
