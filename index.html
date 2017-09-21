@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="vue-animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
-
-
-
 </head>
 
 <body>
@@ -26,16 +23,22 @@
 
                     <!--Card image-->
                     <div id="title">
-                    <h4 class="card-title">{{ dealer.data.name }}</h4>
-                    <hr>
+                        <h4 class="card-title">{{ dealer.data.name }}</h4>
+                        <hr>
                     </div>
 
                     <!--Card content-->
                     <div class="card-body">
-                        <!--Title-->
+                        <h3>{{ dealer.data.phone1 }}</h3>
                         <!--Text-->
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
+                        <p class="card-text"><em>Can't talk now? Click below to send an email.</em></p>
+                        <a href="#" class="btn btn-primary">Contact this Pro</a>
+                        <h3>Business Hours</h3>
+                        <ul id="hours">
+                            <li>Weekdays {{ dealer.data.weekHours.mon }}</li>
+                            <li>Saturdays {{ dealer.data.weekHours.sat }}</li>
+                            <li>Sundays {{ dealer.data.weekHours.sun }}</li>
+                        </ul>
                     </div>
 
                     <div id="card-footer">

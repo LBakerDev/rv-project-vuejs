@@ -28,7 +28,7 @@ new Vue({
                         "thu": "7:00am - 7:00pm",
                         "fri": "7:00am - 7:00pm",
                         "sat": "7:00am - 3:00pm",
-                        "sun": ""
+                        "sun": "- Closed"
                     },
                     "certifications": [
                         "Installation Pro",
@@ -54,8 +54,8 @@ new Vue({
                         "wed": "7:00am - 7:00pm",
                         "thu": "7:00am - 7:00pm",
                         "fri": "7:00am - 7:00pm",
-                        "sat": "",
-                        "sun": "On Call"
+                        "sat": "- Closed",
+                        "sun": "- On Call"
                     },
                     "certifications": [
                         "Installation Pro",
@@ -83,7 +83,7 @@ new Vue({
                         "thu": "8:00am - 5:00pm",
                         "fri": "8:00am - 5:00pm",
                         "sat": "8:00am - 5:00pm",
-                        "sun": ""
+                        "sun": "- Closed"
                     },
                     "certifications": [
                         "Installation Pro",
@@ -138,7 +138,7 @@ new Vue({
                         "thu": "7:00am - 7:00pm",
                         "fri": "7:00am - 7:00pm",
                         "sat": "7:00am - 3:00pm",
-                        "sun": ""
+                        "sun": "Closed"
                     },
                     "certifications": [
                         "Installation Pro",
@@ -164,7 +164,7 @@ new Vue({
                         "thu": "7:00am - 7:00pm",
                         "fri": "7:00am - 7:00pm",
                         "sat": "7:00am - 3:00pm",
-                        "sun": ""
+                        "sun": "- Closed"
                     },
                     "certifications": [
                         "Installation Pro",
