@@ -8,12 +8,25 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="vue-animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
 </head>
 
 <body>
 
+    <div class="header">
+        <div>
+            <ul class="header-li">
+                <li>Dealers and Distributors</li>
+                <li>Customer Service</li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container" id="vue-app">
+
+
 
         <div class="providers">
 
@@ -32,8 +45,8 @@
                         <h3>{{ dealer.data.phone1 }}</h3>
                         <!--Text-->
                         <p class="card-text"><em>Can't talk now? Click below to send an email.</em></p>
-                        <a href="#" class="btn btn-primary">Contact this Pro</a>
-                        <h3>Business Hours</h3>
+                        <a href="#" class="btn btn-outline-info waves-effect">Contact this Pro</a>
+                        <h3 class="busHours">Business Hours</h3>
                         <ul id="hours">
                             <li>Weekdays {{ dealer.data.weekHours.mon }}</li>
                             <li>Saturdays {{ dealer.data.weekHours.sat }}</li>
@@ -42,9 +55,9 @@
                     </div>
 
                     <div id="card-footer">
-                        <ul>
-                            <li v-for="cert in dealer.data.certifications">{{ cert }}</li>
-                        </ul>
+
+                        <p v-for="cert in dealer.data.certifications">{{ cert }}</p>
+
                     </div>
 
                 </div>
@@ -53,8 +66,21 @@
             </div>
         </div>
 
+        
 
     </div>
+    <footer class="footer">
+            <div>
+                <h1>POOLPROS</h1>
+                <h3>CONNECT WITH US</h3>
+                <div class="footer secondary">
+                    <ul>
+                        <li>2017</li>
+                    </ul>
+
+                </div>
+            </div>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
