@@ -1,3 +1,25 @@
+#vue-app{
+    width: 80%;
+}
+
+.container{
+    margin: 0 auto;
+}
+
 hr{
     width: 20%
+}
+
+.providers{
+    display: flex;
+    flex-wrap: wrap;
+    
+} 
+
+/* Styling for dealer card */
+.card{
+    padding: 20px;
+    margin: 20px;
+    flex-grow: 1;
+    text-align: center;
 }
