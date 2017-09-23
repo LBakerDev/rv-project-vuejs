@@ -8,22 +8,33 @@ body{
     font-family: raleway;
 }
 
-.header{
-    background-color: #3f51b5;
-    color: white;
-    display: flex;
-    
-}
-
- .header ul li{
-    display: inline-block;
-    color: white;
-    
-} 
-
+/* Styling for app content */
 #vue-app{
     max-width: 90%;
     font-family: raleway;
+}
+
+/* Styling for secondary navbar color */
+.navTop{
+    color: white;
+    background-color: #536dfe;
+}
+
+/* Styling for 'li' for secondary nav color */
+.navTop ul li{
+    color: white;
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 1em;
+}
+
+.navbar{
+    margin-bottom: 80px;
+}
+
+#navBrand{
+    font-weight: 500 !important;
+    color: #536dfe;
 }
 
 /* Checkbox component */
@@ -65,6 +76,17 @@ hr{
     
 }
 
+/* styling for card text */
+.card-text{
+    margin-top: 1em;
+    font-size: .8em;
+}
+
+/* Styling for business hours portion of card */
+.busHours{
+    margin-top: 30px
+}
+
 /* stylying for footer of card item  */
 .card-footer {
     background-color: #e0e0e0; 
@@ -78,7 +100,7 @@ hr{
 
 /* styling for bottom portion of page footer */
 .secondary {
-    background-color: #536dfe
+    background-color: #536dfe;
 }
 
 /* #card-footer{

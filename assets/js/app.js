@@ -4,7 +4,7 @@
 new Vue({
     el: '#vue-app',
     data: {
-        "checkedNames": [],
+        "checkedCerts": [],
         "zipcode": "28205",
         "location": {
             "lat": 35.2263714,
@@ -211,12 +211,14 @@ new Vue({
     computed:{
         getCerts: function () {
             var certList = [];
-            var dealers = this.dealers.data;
+            if (!this.dealers) {
+                return certList;
+            }
             // loop through dealers
-            dealers.forEach(function(dealer) {
+            this.dealers.forEach(function(dealer) {
             //loop through current dealer certs
                 
-                dealer.certifications.forEach(function(cert) {
+                dealer.data.certifications.forEach(function(cert) {
                     if(certList.indexOf(cert) === -1) {
                         certList.push(cert);
                     }
