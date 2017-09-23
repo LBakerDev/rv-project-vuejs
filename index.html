@@ -53,7 +53,7 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Zip Code">
+                    <input class="form-control mr-sm-2" type="text" v-model="search" placeholder="Zip Code">
                     <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                 </form>
             </div>
@@ -81,7 +81,7 @@
         <div class="providers">
 
             <!--Card-->
-            <div v-for="dealer in dealers" class="cardContainer">
+            <div v-for="dealer in filteredDealers" class="cardContainer">
                 <div class="card">
 
                     <!--Card image-->
