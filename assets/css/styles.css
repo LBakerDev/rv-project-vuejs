@@ -39,6 +39,14 @@ body{
     font-size: .8em;
 }
 
+.navTop-ul:nth-child(3) {
+    margin-right: 1em;
+}
+
+.ion-share{
+    color: white;
+}
+
 .navbar{
     margin-bottom: 0px;
     
@@ -50,6 +58,7 @@ body{
     color: #536dfe;
 }
 
+/* Styling for banner photo */
 .banner{
     background-image: url(../images/bubblesBanner.jpg);
     background-repeat: no-repeat;
