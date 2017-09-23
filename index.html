@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="vue-animate.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
 </head>
@@ -59,13 +60,27 @@
             </div>
         </nav>
 
+        <div class="jumbotron">
+                <h1 class="h1-responsive">PoolPros</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                    to featured content or information.</p>
+                <hr class="my-2">
+                <p>It uses utility classes for typography and spacing to space content out within the larger
+                    container.
+                </p>
+                <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" v-model="search" placeholder="Zip Code">
+                        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                    </form>
+            </div>
+
 
 
         <div class="filterContainer">
             <div class="filter">
 
                 <div class="filter-one">
-                    <h4>7 dealers in 28226</h4>
+                    <h4>7 dealers in {{ search }}</h4>
                 </div>
                 <h4 id="filter-title">Filter Results</h4>
 
@@ -118,11 +133,18 @@
 
     <footer class="footer">
         <div>
-            <h1>POOLPROS</h1>
+            <h1><span class="footerTitle">POOL</span>Pros</h1>
             <h3>CONNECT WITH US</h3>
+            <ul>
+                <a href=""><li><i class="ion-social-twitter"></i></li></a>
+                <a href=""><li><i class="ion-social-facebook"></i></li></a>
+                <a href=""><li><i class="ion-social-youtube"></i></li></a>
+            </ul>
             <div class="footer secondary">
                 <ul>
-                    <li>2017</li>
+                    <li>&copy; 2017 Pool Pros</li>
+                    <a href=""><li>Privacy Policy</li></a>
+                    <a href=""><li>Terms and Conditions</li></a>
                 </ul>
 
             </div>

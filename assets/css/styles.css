@@ -18,7 +18,7 @@ body{
 /* Styling for secondary navbar color */
 .navTop{
     color: white;
-    background-color: #536dfe;
+    background-color: #1a237e;
     height: 40px;
 }
 
@@ -127,15 +127,61 @@ hr{
     background-color: #e0e0e0; 
 }
 
+/* styling for page footer */
 .footer{
-    background-color: #3f51b5;
+    background-color: #1a237e;
     color: white;
     text-align: center;
+    margin-top: 5em;
+}
+
+/* Styling for footer main title */
+.footer h1{
+    padding-top: 1em;
+}
+
+.footer h3 {
+    font-size: 1em;
+}
+
+/* padding for social media footer */
+.footer ul li{
+    display: inline-block;
+    padding-left: 1.5em;
+}
+
+/* Styling for title in footer */
+.footerTitle{
+    color:#536dfe;
+}
+
+/* styling for icons */
+
+.footer i {
+    color: #536dfe;
+    font-size: 1.3em;
+}
+
+.footer i:hover{
+    color: #ff9800;
 }
 
 /* styling for bottom portion of page footer */
 .secondary {
     background-color: #536dfe;
+    margin-top: 2.5em;
+    height: 3.0em;
+}
+
+.secondary ul{
+   margin: 0 auto;
+   padding-top: .7em;
+}
+
+.secondary ul li{
+    color: white;
+    display: inline-block;
+    padding-left: 2em;
 }
 
 /* #card-footer{

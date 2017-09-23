@@ -4,7 +4,7 @@
 new Vue({
     el: '#vue-app',
     data: {
-        "search": "",
+        "search": "28205",
         "checkedCerts": [],
         "zipcode": "28205",
         "location": {
@@ -77,7 +77,7 @@ new Vue({
                 "city": "Charlotte",
                 "state": "North Carolina",
                 "country": "US",
-                "zipcode": "28206",
+                "zipcode": "28205",
                 "weekHours": {
                     "mon": "8:00am - 5:00pm",
                     "tue": "8:00am - 5:00pm",
