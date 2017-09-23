@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vue-animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
 </head>
 
@@ -26,18 +26,33 @@
 
     <div class="container" id="vue-app">
 
+        <div class="filter">
+            <div>
+                <div>
+                    <h1>Filter Results</h1>
+                    <ul>
+                        <li>Service</li>
+                        <li>Installation</li>
+                        <li>Residential</li>
+                        <li>Commercial</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
 
 
         <div class="providers">
 
             <!--Card-->
-            <div v-for="dealer in dealers">
+            <div v-for="dealer in dealers" class="cardContainer">
                 <div class="card">
 
                     <!--Card image-->
                     <div id="title">
-                        <h4 class="card-title">{{ dealer.data.name }}</h4>
-                        <hr>
+                        <h2 class="card-title">{{ dealer.data.name }}</h4>
+                            <hr>
                     </div>
 
                     <!--Card content-->
@@ -54,33 +69,30 @@
                         </ul>
                     </div>
 
-                    <div id="card-footer">
+                    <div class="card-footer">
 
                         <p v-for="cert in dealer.data.certifications">{{ cert }}</p>
 
                     </div>
-
                 </div>
                 <!--/.Card-->
 
             </div>
         </div>
-
-        
-
     </div>
-    <footer class="footer">
-            <div>
-                <h1>POOLPROS</h1>
-                <h3>CONNECT WITH US</h3>
-                <div class="footer secondary">
-                    <ul>
-                        <li>2017</li>
-                    </ul>
 
-                </div>
+    <footer class="footer">
+        <div>
+            <h1>POOLPROS</h1>
+            <h3>CONNECT WITH US</h3>
+            <div class="footer secondary">
+                <ul>
+                    <li>2017</li>
+                </ul>
+
             </div>
-        </footer>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
