@@ -60,27 +60,17 @@
             </div>
         </nav>
 
-        <div class="jumbotron">
-                <h1 class="h1-responsive">PoolPros</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                    to featured content or information.</p>
-                <hr class="my-2">
-                <p>It uses utility classes for typography and spacing to space content out within the larger
-                    container.
-                </p>
-                <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="text" v-model="search" placeholder="Zip Code">
-                        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-                    </form>
-            </div>
+        <div class="banner"></div>
+
+        
 
 
-
+        <!-- Display section for dropdown checkbox filter -->
         <div class="filterContainer">
             <div class="filter">
 
                 <div class="filter-one">
-                    <h4>7 dealers in {{ search }}</h4>
+                    <h4>{{ filteredDealers.length }} dealers in {{ search }}</h4>
                 </div>
                 <h4 id="filter-title">Filter Results</h4>
 
@@ -107,6 +97,7 @@
 
                     <!--Card content-->
                     <div class="card-body">
+                        <i class="ion-android-call"></i>
                         <h3>{{ dealer.data.phone1 }}</h3>
                         <!--Text-->
                         <p class="card-text"><em>Can't talk now? Click below to send an email.</em></p>
