@@ -10,7 +10,8 @@ body{
 
 /* Styling for app content */
 #vue-app{
-    max-width: 90%;
+    max-width: 80%;
+    margin: 0 auto;  
     font-family: raleway;
 }
 
@@ -18,6 +19,11 @@ body{
 .navTop{
     color: white;
     background-color: #536dfe;
+    height: 40px;
+}
+
+.navTop-ul{
+    float: right;
 }
 
 /* Styling for 'li' for secondary nav color */
@@ -25,27 +31,55 @@ body{
     color: white;
     display: inline-block;
     margin-right: 30px;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .navbar{
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
+/* Color styling for brand */
 #navBrand{
     font-weight: 500 !important;
     color: #536dfe;
 }
 
 /* Checkbox component */
-.filter{
+.filterContainer{
     background-color: #e0e0e0;
     border-radius: 8px;
+    /* display: flex; */
+    height: 4em;
 }
 
-.container{
+.filter {
+    display: flex;
     margin: 0 auto;
+    padding-top: 10px
 }
+
+.filter-one{
+    border-right: 1px solid #9e9e9e;
+}
+
+/* Styling for search results in filter */
+.filter-one h4 {
+    color: #536dfe;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+#filter-title{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.filter-one h4 {
+    margin-left: 6em;
+    margin-right: 1em;
+}
+
 
 /* Styling for horizontal rule */
 hr{
@@ -73,7 +107,6 @@ hr{
     flex-shrink: 1;
     text-align: center;
     border-radius: 8px !important;
-    
 }
 
 /* styling for card text */
@@ -84,7 +117,9 @@ hr{
 
 /* Styling for business hours portion of card */
 .busHours{
-    margin-top: 30px
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* stylying for footer of card item  */
