@@ -71,8 +71,6 @@
                         <!-- Form contact -->
 
                     </div>
-
-
                     <div class="modal-footer">
 
                     </div>
@@ -140,12 +138,15 @@
                     <div class="filter-one">
                         <h4>{{ filteredDealers.length }} dealers in {{ search }}</h4>
                     </div>
-                    <h4 id="filter-title">Filter Results</h4>
-
+                    <div>
+                        <h4 id="filter-title">Filter Results</h4>
+                    </div>
                     <div class="wrapper form-check form-check-inline filter two" v-for="cert in getCerts">
-                        <div>
-                            <input type="checkbox" id="{{ key++ }}" value="{{ cert }}" v-model="checkedCerts">
-                            <label for="{{ key }}">{{ cert }}</label>
+                        <div>{{ cert }}
+                            <input type="checkbox" id="{{ cert.id }}" value="{{ cert.name }}" v-model="checkedCerts">
+                            <label for="{{ cert.id }}">{{ cert.name }}</label>
+
+                            
                         </div>
                     </div>
                 </div>

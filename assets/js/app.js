@@ -4,7 +4,7 @@
 new Vue({
     el: '#vue-app',
     data: {
-        "search": "28205",
+        "search": "28207",
         "checkedCerts": [],
         "zipcode": "28205",
         "location": {
@@ -217,12 +217,26 @@ new Vue({
             this.dealers.forEach(function (dealer) {
                 //loop through current dealer certs
 
-                dealer.data.certifications.forEach(function (cert) {
-                    if (certList.indexOf(cert) === -1) {
-                        certList.push(cert);
+                //dealer.data.certifications.forEach(function (cert) {
+                for(var i = 0; dealer.data.certifications.length < i; i++) {
+                    var cert = dealer.data.certifications[i];
+                    if (certList.length === 0) {
+                        certList.push({name: cert, id: cert.replace(' ', '_')});
+                        continue;
                     }
-                });
+                    //certList.forEach(function(c) {
+                    for (var j = 0; certList.length < j; j++) {
+                        if (certList[j].name === cert) {
+                            continue;
+                        }
+                        certList.push({name: cert, id: cert.replace(' ', '_')});
+                    }
+                    //if (certList.indexOf(cert) === -1) {
+                    //    certList.push(cert);
+                    //}
+                };
             });
+            console.log(certList);
             return certList;
         },
 
