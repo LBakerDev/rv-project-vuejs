@@ -241,9 +241,12 @@ hr{
     font-size: 1.3em;
 }
 
+/* Hover styling for footer icon */
 .footer i:hover{
     color: #ff9800;
 }
+
+
 
 /* styling for bottom portion of page footer */
 .secondary {
@@ -257,10 +260,15 @@ hr{
    padding-top: .7em;
 }
 
+/* Styling for secondary footer li */
 .secondary ul li{
     color: white;
     display: inline-block;
     padding-left: 2em;
+}
+
+.secondary ul li:hover{
+    color: #ff9800;
 }
 
 /* Styling for Modal */
