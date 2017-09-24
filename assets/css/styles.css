@@ -64,7 +64,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100px
+    height: 100px;
+    margin-bottom: .7em;
 }
 
 /* Checkbox component */
@@ -138,7 +139,16 @@ hr{
 }
 
 /* Styling for phone block in card */
-.card
+.card-title{
+    color: #616161;
+}
+
+/* Styling for phone icon */
+.card-body i{
+    font-size: .9em;
+    color: #536df3;
+    margin-right: 1em;
+}
 
 /* styling for card text */
 .card-text{
