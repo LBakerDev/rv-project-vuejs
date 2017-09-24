@@ -6,6 +6,14 @@ h2, p, li {
 body{
     box-sizing: border-box;
     font-family: raleway;
+    /* display: flex;
+    min-height:100vh;
+    flex-direction: column; */
+}
+
+/* Styling for Nav and banner group */
+header{
+    width: 100%;
 }
 
 /* Styling for app content */
@@ -13,6 +21,7 @@ body{
     max-width: 100%;
     margin: 0 auto;  
     font-family: raleway;
+    flex: 1;
 }
 
 /* Styling for secondary navbar color */
@@ -179,7 +188,21 @@ hr{
 
 /* stylying for footer of card item  */
 .card-footer {
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0 !important;
+
+}
+
+/* Styling for certification */
+.card-footer ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 3em;
+    justify-content: flex-start;
+}
+
+.card-footer ul li {
+    font-size: .7em;
 }
 
 /* styling for page footer */
@@ -239,7 +262,19 @@ hr{
     padding-left: 2em;
 }
 
-/* #card-footer{
-    display: flex;
-    flex-wrap: wrap;
+/* Styling for Modal */
+.modal-header{
+    color: white;
+    background-color: #1a237e;
+}
+
+
+/* .modal-body{
+    background-color: #e0e0e0;
 } */
+
+.md-form .prefix~input, .md-form .prefix~textarea {
+    margin-left: 2rem !important;
+    width: 92%;
+    width: calc(100% - 3rem);
+}
