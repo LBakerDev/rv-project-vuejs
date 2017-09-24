@@ -142,9 +142,11 @@
                     </div>
                     <h4 id="filter-title">Filter Results</h4>
 
-                    <div class="form-check form-check-inline filter two" v-for="cert in getCerts">
-                        <input type="checkbox" id="{{ key++ }}" value="{{ cert }}" v-model="checkedCerts">
-                        <label for="{{ key }}">{{ cert }}</label>
+                    <div class="wrapper form-check form-check-inline filter two" v-for="cert in getCerts">
+                        <div>
+                            <input type="checkbox" id="{{ key++ }}" value="{{ cert }}" v-model="checkedCerts">
+                            <label for="{{ key }}">{{ cert }}</label>
+                        </div>
                     </div>
                 </div>
 
