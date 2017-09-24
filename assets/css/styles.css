@@ -141,6 +141,7 @@ hr{
 /* Styling for phone block in card */
 .card-title{
     color: #616161;
+    font-size: 1.5em;
 }
 
 /* Styling for phone icon */
@@ -148,6 +149,11 @@ hr{
     font-size: .9em;
     color: #536df3;
     margin-right: 1em;
+}
+
+.card-phone{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* styling for card text */
@@ -159,8 +165,9 @@ hr{
 /* Styling for business hours portion of card */
 .busHours{
     margin-top: 30px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
+    color: #424242;
 }
 
 /* stylying for footer of card item  */
