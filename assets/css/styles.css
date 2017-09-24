@@ -23,6 +23,7 @@ body{
     
 }
 
+/* Styling for UL in secondary nav */
 .navTop ul{
     float: right;
     margin-right: 5em;
@@ -65,7 +66,7 @@ body{
     background-position: center;
     background-size: cover;
     height: 100px;
-    margin-bottom: .7em;
+    margin-bottom: 1em;
 }
 
 /* Checkbox component */
@@ -111,15 +112,11 @@ hr{
     color: #e0e0e0
 }
 
-.banner-img {
-    height: 100%;
-    width: 100%;
-}
-
 /* styling for card item container */
 .providers{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1em;
     
 } 
 
@@ -155,6 +152,16 @@ hr{
     font-size: 1.5em;
     font-weight: bold;
 }
+
+/* Styling mail icon */
+.card-body a i{
+    font-size: 1.7em;
+    color: #1a237e;
+    position: relative;
+    top: 4px;
+    left: 10px;
+}
+
 
 /* styling for card text */
 .card-text{
