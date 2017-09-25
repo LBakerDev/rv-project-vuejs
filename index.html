@@ -33,37 +33,40 @@
                     <div class="modal-body">
                         <p>Fill out the form below and Talent Pool will get in touch.</p>
                         <div class="form-container">
-                                <form>
-                                        <div class="form-group">
-                                          <label for="formGroupExampleInput">First and last name</label>
-                                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jane Smith">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="formGroupExampleInput2">Phone Number</label>
-                                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="formGroupExampleInput2">Email address</label>
-                                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="formGroupExampleInput2">Comments or questions</label>
-                                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                                        </div>
-                                        <div class="form-group" id="form-toggle"> 
-                                          <label for="formGroupExampleInput2">Do you currently own a pool or spa?</label><br>
-                                          <input type="radio" name="toggle" id="toggle-on" class="form-control" id="formGroupExampleInput2"><label class="modal-toggle" for="toggle-on">Yes</label>
-                                          <input type="radio" name="toggle" id="toggle-off" class="form-control" id="formGroupExampleInput2"><label class="modal-toggle" for="toggle-on">No</label>
-                                        </div>
-                                        <hr>
+                            <form>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">First and last name</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jane Smith">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Phone Number</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Email address</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Comments or questions</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <div class="form-group" id="form-toggle">
+                                    <label for="formGroupExampleInput2">Do you currently own a pool or spa?</label><br>
+                                    <input type="radio" name="toggle" id="toggle-on" class="form-control" id="formGroupExampleInput2">
+                                    <label
+                                        class="modal-toggle" for="toggle-on">Yes</label>
+                                        <input type="radio" name="toggle" id="toggle-off" class="form-control" id="formGroupExampleInput2">
+                                        <label
+                                            class="modal-toggle" for="toggle-on">No</label>
+                                </div>
+                                <hr>
 
-                                      </form>
+                            </form>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <p>Roof party kombucha gastropub post-ironic iPhone typewriter. 
-                            Waistcoat fashion axe pug keytar gastropub la croix. XOXO small batch man bun craft 
-                            beer try-hard semiotics hashtag gluten-free poke VHS</p>
+                        <p>Roof party kombucha gastropub post-ironic iPhone typewriter. Waistcoat fashion axe pug keytar gastropub
+                            la croix. XOXO small batch man bun craft beer try-hard semiotics hashtag gluten-free poke VHS</p>
                     </div>
                 </div>
             </div>
@@ -89,8 +92,6 @@
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-
-
 
                 <a class="navbar-brand" href="#"><span id="navBrand">POOL</span>PROS</a>
 
@@ -121,7 +122,7 @@
         </header>
 
         <!-- Grouping for display of page content -->
-        <div class="container">
+        <div class="content-wrapper">
             <!-- Display section for dropdown checkbox filter -->
             <div class="filterContainer">
                 <div class="filter">
@@ -161,7 +162,7 @@
                             <h3 class="card-phone"><i class="ion-android-call"></i>{{ dealer.data.phone1 }}</h3>
                             <!--Text-->
                             <p class="card-text"><em>Can't talk now? Click below to send an email.</em></p>
-                            <a href="#" class="btn btn-outline-info waves-effect" data-toggle="modal" data-target="#exampleModal"><i class="ion-email"></i></i>Contact this Pro</a>
+                            <a href="#" class="btn btn-outline-info waves-effect" data-toggle="modal" data-target="#exampleModal"><i class="ion-email"></i></i><span>Contact this Pro</span></a>
                             <h3 class="busHours">Business Hours</h3>
                             <ul id="hours">
                                 <li>Weekdays {{ dealer.data.weekHours.mon }}</li>
