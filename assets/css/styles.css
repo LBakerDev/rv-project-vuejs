@@ -460,7 +460,7 @@ input[type="radio"]:checked{
 @media  (max-width: 736px) {
     .cardContainer{
         width: 75%;
-        margin-left: 4em;
+        margin-left: 0em;
     }
     .secondary ul li{
         font-size: .8em;
