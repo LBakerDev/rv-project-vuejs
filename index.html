@@ -127,7 +127,7 @@
         <div class="content-wrapper">
             <!-- Display section for dropdown checkbox filter -->
             <!-- <div class="filterContainer"> -->
-                
+
                 <div class="filter-flex">
                     <div class="filter one">
                         <h4>{{ filteredDealers.length }} dealers in {{ search }}</h4>
@@ -135,10 +135,12 @@
                     <div class="filter two">
                         <h4 id="filter-title">Filter Results</h4>
                     </div>
+                     <!-- <div class="check">  -->
                     <div class="wrapper form-check form-check-inline filter three" v-for="cert in getCerts">
-                        <input type="checkbox" id="{{ key++ }}" value="{{ cert }}" v-model="checkedCerts">
-                        <label for="{{ key }}">{{ cert }}</label>
+                        <input type="checkbox" id="" value="" v-model="checkedCerts">
+                        <label for="">{{ cert }}</label>
                     </div>
+                     <!-- </div> -->
                 </div>
 
             <!-- </div> -->
