@@ -406,8 +406,21 @@ input[type="radio"]:checked{
     .content-wrapper{
         width: 100%    
     }
+    .cardContainer{
+        width:100%;
+    }
 }
-@media (max-width: 767px) {  }
+@media  (max-width: 736px) {
+    .cardContainer{
+        width: 75%;
+        margin-left: 4em;
+    }
+    .secondary ul li{
+        font-size: .8em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+  }
 
 
 /* Hide secondary nav @ 991 max width */
@@ -425,7 +438,11 @@ input[type="radio"]:checked{
     }
 }
 
-@media (max-width: 1199px) {  }
+@media (min-width: 1199px) { 
+    .content-wrapper{
+        width: 80%;
+    }
+ }
 
 /* Styling for contant button */
 .btn {
