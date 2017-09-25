@@ -304,7 +304,16 @@ hr{
     color: white;
     display: inline-block;
     padding-left: 2em;
+    padding-right: 1em;
+    list-style-type: none;
+    border-right: 2px solid white;
 }
+
+/* Styling for vertical border on secondary footer */
+.secondary ul > li:nth-child(3) {
+    border-right: none;
+}
+
 
 /* Styling for secondary footer li hover state */
 .secondary ul li:hover{
@@ -376,9 +385,20 @@ input[type="radio"]:checked{
 .modal-footer{
     background-color: #e0e0e0;
 }
+
+/* Styling for modal footer */
 .modal-footer p{
     font-size: .7em;
     font-weight: 500;
+}
+
+.btn-modal{
+    width: 100%;
+    background-color: inherit;
+    color: #616161 !;
+    border:  none !important;
+    width: 100% !important;
+    text-align: center;
 }
 
 
@@ -407,6 +427,7 @@ input[type="radio"]:checked{
 
 @media (max-width: 1199px) {  }
 
+/* Styling for contant button */
 .btn {
     border-radius: 4px;
     background-color: #f4511e;
@@ -453,4 +474,12 @@ input[type="radio"]:checked{
   .btn:hover span:after {
     opacity: 1;
     right: 0;
+  }
+
+  /* Styling for enter/leave transitions*/
+  .v-enter-active, .v-leave-active {
+    transition: opacity .5s;
+  }
+  .v-enter, .v-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0
   }

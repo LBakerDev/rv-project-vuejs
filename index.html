@@ -53,13 +53,15 @@
                                 <div class="form-group" id="form-toggle">
                                     <label for="formGroupExampleInput2">Do you currently own a pool or spa?</label><br>
                                     <input type="radio" name="toggle" id="toggle-on" class="form-control" id="formGroupExampleInput2">
-                                    <label
-                                        class="modal-toggle" for="toggle-on">Yes</label>
-                                        <input type="radio" name="toggle" id="toggle-off" class="form-control" id="formGroupExampleInput2">
-                                        <label
-                                            class="modal-toggle" for="toggle-on">No</label>
+                                    <label class="modal-toggle" for="toggle-on">Yes</label>
+                                    <input type="radio" name="toggle" id="toggle-off" class="form-control" id="formGroupExampleInput2">
+                                    <label class="modal-toggle" for="toggle-on">No</label>
                                 </div>
                                 <hr>
+                                <div>
+                                    <button type="submit" class= "btn"><span>Send my email</span></button>
+
+                                </div>
 
                             </form>
                         </div>
@@ -147,6 +149,7 @@
 
                 <!--Card-->
                 <div v-for="dealer in filteredDealers" class="cardContainer">
+                    <transition appear>
 
                     <div class="card">
 
@@ -178,6 +181,7 @@
                         </div>
                     </div>
                     <!--/.Card-->
+                </transition>
                 </div>
             </div>
         </div>
