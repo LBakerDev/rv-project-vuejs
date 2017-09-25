@@ -457,18 +457,6 @@ input[type="radio"]:checked{
 
 }
 
-@media only screen and  (max-width: 575px) {
-    .content-wrapper{
-        width: 100%    
-    }
-    .cardContainer{
-        width:100%;
-    }
-
-    .filter-flex{
-        height: 9em;
-    }
-}
 @media  (max-width: 736px) {
     .cardContainer{
         width: 75%;
@@ -480,6 +468,34 @@ input[type="radio"]:checked{
         padding-right: 1em;
     }
   }
+
+@media only screen and  (max-width: 575px) {
+    .content-wrapper{
+        width: 100%    
+    }
+    .cardContainer{
+        width:100%;
+    }
+
+    .filter-flex{
+        height: 7em;
+        display: block;
+    }
+    .providers{
+        margin-top: 4em;
+    }
+    .one h4{
+        text-align: center;
+    }
+    #filter-title{
+        display: none;
+    }
+
+    .three{
+        margin-left: 5em;
+    }
+}
+
 
 
 
