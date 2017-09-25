@@ -135,18 +135,18 @@
                 <div class="filter two">
                     <h4 id="filter-title">Filter Results</h4>
                 </div>
-                  
+
                 <div class="wrapper form-check form-check-inline filter three check-lg" v-for="cert in getCerts">
                     <input type="checkbox" id="" value="" v-model="checkedCerts">
                     <label for="">{{ cert }}</label>
                 </div>
-             
-                 <div class="check-hidden">  
-                <div class="wrapper form-check form-check-inline filter three" v-for="cert in getCerts">
-                    <input type="checkbox" id="" value="" v-model="checkedCerts">
-                    <label for="">{{ cert }}</label>
+
+                <div class="check-hidden">
+                    <div class="wrapper form-check form-check-inline filter three" v-for="cert in getCerts">
+                        <input type="checkbox" id="" value="" v-model="checkedCerts">
+                        <label for="">{{ cert }}</label>
+                    </div>
                 </div>
-             </div> 
             </div>
 
             <!-- </div> -->
