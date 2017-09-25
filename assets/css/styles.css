@@ -520,7 +520,7 @@ input[type="radio"]:checked {
 
 @media (min-width: 1199px) {
     .content-wrapper {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -537,9 +537,7 @@ input[type="radio"]:checked {
     .navTop {
         display: none;
     }
-    /* .filterContainer{
-        display: none;
-    } */
+   
     .content-wrapper {
         width: 100%;
     }

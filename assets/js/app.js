@@ -4,6 +4,7 @@
 new Vue({
     el: '#vue-app',
     data: {
+        "title":"",
         "search": "28207",
         "checkedCerts": [],
         "zipcode": "28205",
@@ -205,6 +206,12 @@ new Vue({
         }]
     },
     methods: {
+        // Function to a
+        modalTitle: function(title) {
+            return this.title=title;
+
+        },
+
 
     },
     computed: {
@@ -226,6 +233,7 @@ new Vue({
             return certList;
         },
 
+        
         // Search function to filter dealers
         filteredDealers: function () {
             let dealerArray = this.dealers,

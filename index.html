@@ -25,13 +25,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h6 class="modal-title" id="exampleModalLabel">Email</h6>
-                        <h3>Talent Pool</h3>
+                        <h3>{{title}}</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                     </div>
                     <div class="modal-body">
-                        <p>Fill out the form below and Talent Pool will get in touch.</p>
+                        <p>Fill out the form below and {{title}} will get in touch.</p>
                         <div class="form-container">
                             <form>
                                 <div class="form-group">
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="wrapper form-check form-check-inline filter three check-lg" v-for="cert in getCerts">
-                    <input type="checkbox" id="" value="" v-model="checkedCerts">
+                    <input type="checkbox" :id="cert" :value="cert" v-model="checkedCerts">
                     <label for="">{{ cert }}</label>
                 </div>
 
@@ -172,7 +172,7 @@
                                 <h3 class="card-phone"><i class="ion-android-call"></i>{{ dealer.data.phone1 }}</h3>
                                 <!--Text-->
                                 <p class="card-text"><em>Can't talk now? Click below to send an email.</em></p>
-                                <a href="#" class="btn btn-outline-info waves-effect" data-toggle="modal" data-target="#exampleModal"><i class="ion-email"></i></i><span>Contact this Pro</span></a>
+                                <a v-on:click="modalTitle(dealer.data.name)" href="#" class="btn btn-outline-info waves-effect" data-toggle="modal" data-target="#exampleModal"><i class="ion-email"></i></i><span>Contact this Pro</span></a>
                                 <h3 class="busHours">Business Hours</h3>
                                 <ul id="hours">
                                     <li>Weekdays {{ dealer.data.weekHours.mon }}</li>
