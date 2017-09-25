@@ -478,26 +478,31 @@ input[type="radio"]:checked{
     }
 
     .filter-flex{
-        height: 9em;
+        height: 14em;
         display: block;
     }
     .providers{
         margin-top: 4em;
     }
     .one h4{
-        text-align: center;
+        margin-left: 17px;
+        margin-bottom: 1em;
     }
     #filter-title{
         display: none;
     }
 
     .three{
-        margin-left: 2em;
+        margin-left: 1em;
     }
 
     .one{
         border-right: none;
         margin-top: -.9;
+    }
+    
+    .form-check-inline{
+        display: block !important;
     }
 }
 
