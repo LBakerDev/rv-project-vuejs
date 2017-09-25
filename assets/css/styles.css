@@ -85,6 +85,7 @@ header{
     background-color: #1a237e;
 }
 
+/* color text white on nav hover */
 .nav-item:hover .nav-link{
     color: white !important;
 
@@ -92,11 +93,11 @@ header{
 
 /* Styling for banner photo */
 .banner{
-    background-image: url(../images/bubblesBanner.jpg);
+    background-image: url(../images/water-banner-3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100px;
+    height: 150px;
     margin-bottom: 1em;
 }
 
