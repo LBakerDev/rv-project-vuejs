@@ -145,6 +145,13 @@ hr{
     border-radius: 8px !important;
 }
 
+/* #title {
+    font-size: 1.2em;
+    height: 4em;
+} */
+
+
+
 /* Styling for phone block in card */
 .card-title{
     color: #616161;
@@ -277,13 +284,27 @@ hr{
     background-color: #1a237e;
 }
 
-
-/* .modal-body{
+/* Styling for form body */
+.form-container {
     background-color: #e0e0e0;
-} */
+    padding-left: 1em;
+    padding-top: 1em;
+}
 
-.md-form .prefix~input, .md-form .prefix~textarea {
-    margin-left: 2rem !important;
-    width: 92%;
-    width: calc(100% - 3rem);
+/* Styling for form input section */
+.form-control{
+    background-color: white !important;
+}
+
+/* Styling for form input */
+input[type=text] {
+    width: 90% !important;
+}
+
+/* Styling for modal footer */
+.modal-footer{
+    background-color: #e0e0e0;
+}
+.modal-footer p{
+    font-size: .7em;
 }
