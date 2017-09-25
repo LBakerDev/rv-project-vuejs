@@ -128,20 +128,26 @@
             <!-- Display section for dropdown checkbox filter -->
             <!-- <div class="filterContainer"> -->
 
-                <div class="filter-flex">
-                    <div class="filter one">
-                        <h4>{{ filteredDealers.length }} dealers in {{ search }}</h4>
-                    </div>
-                    <div class="filter two">
-                        <h4 id="filter-title">Filter Results</h4>
-                    </div>
-                     <!-- <div class="check">  -->
-                    <div class="wrapper form-check form-check-inline filter three" v-for="cert in getCerts">
-                        <input type="checkbox" id="" value="" v-model="checkedCerts">
-                        <label for="">{{ cert }}</label>
-                    </div>
-                     <!-- </div> -->
+            <div class="filter-flex">
+                <div class="filter one">
+                    <h4>{{ filteredDealers.length }} dealers in {{ search }}</h4>
                 </div>
+                <div class="filter two">
+                    <h4 id="filter-title">Filter Results</h4>
+                </div>
+                  
+                <div class="wrapper form-check form-check-inline filter three check-lg" v-for="cert in getCerts">
+                    <input type="checkbox" id="" value="" v-model="checkedCerts">
+                    <label for="">{{ cert }}</label>
+                </div>
+             
+                 <div class="check-hidden">  
+                <div class="wrapper form-check form-check-inline filter three" v-for="cert in getCerts">
+                    <input type="checkbox" id="" value="" v-model="checkedCerts">
+                    <label for="">{{ cert }}</label>
+                </div>
+             </div> 
+            </div>
 
             <!-- </div> -->
 
@@ -217,15 +223,17 @@
                 </div>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-            crossorigin="anonymous"></script>
-        <script src="assets/js/app.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>
