@@ -129,7 +129,7 @@ hr{
     margin-top: 1em;
     
 } 
-
+/* Styling for card container */
 .cardContainer{
     width: 33.3%;
     min-width: 300px
@@ -274,14 +274,22 @@ hr{
     padding-left: 2em;
 }
 
+/* Styling for secondary footer li hover state */
 .secondary ul li:hover{
     color: #ff9800;
 }
 
-/* Styling for Modal */
+
+
+/* Styling for Modal header */
 .modal-header{
     color: white;
     background-color: #1a237e;
+}
+
+/* Styling for modal close button */
+button.close{
+    color: white;
 }
 
 /* Styling for form body */
@@ -289,6 +297,12 @@ hr{
     background-color: #e0e0e0;
     padding-left: 1em;
     padding-top: 1em;
+}
+
+/* Styling for form label */
+label{
+    font-weight: 700;
+    color: #616161;
 }
 
 /* Styling for form input section */
@@ -300,6 +314,30 @@ hr{
 input[type=text] {
     width: 90% !important;
 }
+/* Cancel out radio button display */
+input[type="radio"] {
+    display: none !important;
+}
+/* Make toggle inline */
+#form-toggle input {
+    display: inline-block;
+}
+
+/* Styling for form toggle */
+.modal-toggle{
+    font-size: 1em ;
+    padding: 10px 30px;
+    background-color: white;
+    color: #616161;
+    border: 1px solid #616161;
+    margin-left: .2em;
+    border-radius: 4px;
+}
+
+input[type="radio"]:checked{
+    color: white;
+    background-color: #00e676;
+}
 
 /* Styling for modal footer */
 .modal-footer{
@@ -307,4 +345,5 @@ input[type=text] {
 }
 .modal-footer p{
     font-size: .7em;
+    font-weight: 500;
 }
