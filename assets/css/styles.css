@@ -478,7 +478,7 @@ input[type="radio"]:checked{
     }
 
     .filter-flex{
-        height: 7em;
+        height: 9em;
         display: block;
     }
     .providers{
@@ -492,7 +492,12 @@ input[type="radio"]:checked{
     }
 
     .three{
-        margin-left: 5em;
+        margin-left: 2em;
+    }
+
+    .one{
+        border-right: none;
+        margin-top: -.9;
     }
 }
 
