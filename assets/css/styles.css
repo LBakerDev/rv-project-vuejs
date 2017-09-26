@@ -124,7 +124,7 @@ header {
 }
 
 .content-wrapper {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -525,7 +525,7 @@ input[type="radio"]:checked {
 
 @media (min-width: 1199px) {
     .content-wrapper {
-        width: 90%;
+        width: 85%;
     }
 }
 
