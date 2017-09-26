@@ -138,7 +138,7 @@ header {
 }
 
 .one {
-    border-right: 1px solid #616161;
+    border-right: 1px solid #bdbdbd;
     flex-grow: .5;
     flex-shrink: 1;
     /* background: green; */
@@ -196,7 +196,7 @@ header {
     margin-left: 4em;
     border-radius: 2px;
     padding-top: .4em;
-    border: 1px solid #616161
+    border: 1px solid #bdbdbd;
 }
 
 
@@ -626,36 +626,36 @@ input[type="radio"]:checked {
 @media only screen and  (max-width: 508px) {
     .check-hidden {
         margin-top: 1em;
-        margin-left: 7em;
-        width: 20em;
+        margin-left: 2em;
+        width: 26em;
+        height: 12em
     }
     .two {
         display: none;
     }
 
     .one h4{
-        margin-left: 7em;
+        margin-top: 0em;
+        margin-left: 6em;
 
     }
 }
 @media only screen and  (max-width: 475px) {
     .check-hidden {
         margin-top: 1em;
-        margin-left: 4em;
-        width: 20em;
+        margin-left: 1em;
+        width: 23em;
     }
     .two {
         display: none;
     }
 
     .one h4{
+        margin-top: -.5em;
         margin-left: 4em;
 
     }
 }
-
-
-
 
 /* Styling for contant button */
 
