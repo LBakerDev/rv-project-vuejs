@@ -145,8 +145,6 @@ header {
     border-right: 1px solid #bdbdbd;
     flex-grow: .5;
     flex-shrink: 1;
-    /* background: green; */
-    /* min-width: 30%; */
     background-color: #e0e0e0;
 }
 
@@ -175,8 +173,6 @@ header {
     flex-grow: .5;
     flex-shrink: .5;
     margin-right: .5em;
-    /* background: red; */
-    /* min-width: 20%; */
 }
 
 
@@ -185,8 +181,6 @@ header {
 .three {
     flex-grow: 1;
     flex-shrink: .5;
-    /* background: blue; */
-    /* min-width: 11.75%; */
     margin-top: .66em;
 }
 
@@ -240,13 +234,6 @@ hr {
     text-align: center;
     border-radius: 8px !important;
 }
-
-
-/* #title {
-    font-size: 1.2em;
-    height: 4em;
-} */
-
 
 /* Styling for phone block in card */
 
@@ -546,9 +533,7 @@ input[type="radio"]:checked {
     .content-wrapper {
         width: 100%;
     }
-    /* .filter-flex {
-        height: 6em;
-    } */
+   
     .one .two {
         width: 50%
     }
