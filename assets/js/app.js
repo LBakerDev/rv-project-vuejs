@@ -208,6 +208,7 @@ new Vue({
     methods: {
         // Function to a
         modalTitle: function(title) {
+            console.log(this.checkedCerts);
             return this.title=title;
 
         },

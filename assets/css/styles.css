@@ -192,8 +192,8 @@ header {
     background-color: white;
     margin-top: -5.24em;
     height: 11em;
-    width: 23em;
-    margin-left: 1em;
+    width: 28.5em;
+    margin-left: 4em;
     border-radius: 2px;
     padding-top: .4em;
     border: 1px solid #616161
@@ -589,7 +589,7 @@ input[type="radio"]:checked {
         margin-top: 4em;
     }
     .one h4 {
-        margin-left: 17px;
+        margin-left: 3em;
         margin-bottom: 1em;
         position: relative;
         top: 0.4em;
@@ -609,7 +609,7 @@ input[type="radio"]:checked {
     .two {
         position: relative;
         top: -3.2em;
-        right: -14em;
+        right: -19em;
     }
     .one {
         border-right: none;
@@ -622,6 +622,39 @@ input[type="radio"]:checked {
         display: none !important;
     }
 }
+
+@media only screen and  (max-width: 508px) {
+    .check-hidden {
+        margin-top: 1em;
+        margin-left: 7em;
+        width: 20em;
+    }
+    .two {
+        display: none;
+    }
+
+    .one h4{
+        margin-left: 7em;
+
+    }
+}
+@media only screen and  (max-width: 475px) {
+    .check-hidden {
+        margin-top: 1em;
+        margin-left: 4em;
+        width: 20em;
+    }
+    .two {
+        display: none;
+    }
+
+    .one h4{
+        margin-left: 4em;
+
+    }
+}
+
+
 
 
 /* Styling for contant button */
