@@ -212,8 +212,6 @@ new Vue({
             return this.title = title;
 
         },
-
-
     },
     computed: {
         getCerts: function () {
