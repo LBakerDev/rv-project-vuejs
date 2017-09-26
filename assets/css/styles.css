@@ -158,6 +158,7 @@ header {
     margin-right: 1em;
 }
 
+/* Styling for filter title */
 #filter-title {
     margin-top: 10px;
     margin-left: 20px;
@@ -626,7 +627,7 @@ input[type="radio"]:checked {
 @media only screen and  (max-width: 508px) {
     .check-hidden {
         margin-top: 1em;
-        margin-left: 2em;
+        margin-left: 2.5em;
         width: 26em;
         height: 12em
     }
