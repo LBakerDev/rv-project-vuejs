@@ -13,7 +13,7 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: raleway;
+    font-family: 'Open sans';
     margin-bottom: 20em !important;
 }
 
@@ -30,7 +30,7 @@ header {
 #vue-app {
     max-width: 100%;
     margin: 0 auto;
-    font-family: raleway;
+    font-family: 'Open sans';
     flex: 1;
 }
 
@@ -97,7 +97,7 @@ header {
 }
 
 .nav-item:hover {
-    background-color: #1a237e;
+    background-color: #1a237e !important;
 }
 
 
@@ -105,6 +105,10 @@ header {
 
 .nav-item:hover .nav-link {
     color: white !important;
+}
+
+.nav-link:hover{
+    color: #1a237e !important;
 }
 
 

@@ -8,8 +8,7 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="vue-animate.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
@@ -52,9 +51,9 @@
                                 </div>
                                 <div class="form-group" id="form-toggle">
                                     <label for="formGroupExampleInput2">Do you currently own a pool or spa?</label><br>
-                                    <input  type="radio" name="toggle" id="toggle-on" class="form-control" id="formGroupExampleInput2">
+                                    <input type="radio" name="toggle" id="toggle-on" class="form-control" id="formGroupExampleInput2">
                                     <label class="modal-toggle" for="toggle-on">Yes</label>
-                                    <input  type="radio" name="toggle" id="toggle-off" class="form-control" id="formGroupExampleInput2">
+                                    <input type="radio" name="toggle" id="toggle-off" class="form-control" id="formGroupExampleInput2">
                                     <label class="modal-toggle" for="toggle-on">No</label>
                                 </div>
                                 <hr>
@@ -133,7 +132,7 @@
                     <h4>{{ filteredDealers.length }} dealers in {{ search }}</h4>
                 </div>
 
-                
+
                 <div class="filter two">
                     <h4 id="filter-title">Filter Results</h4>
                 </div>
@@ -143,12 +142,12 @@
                     <label for="">{{ cert }}</label>
                 </div>
 
-                 <div class="check-hidden">
+                <div class="check-hidden">
                     <div class="wrapper form-check form-check-inline filter three" v-for="cert in getCerts">
                         <input type="checkbox" :id="cert" :value="cert" v-model="checkedCerts">
                         <label for="">{{ cert }}</label>
                     </div>
-                </div> 
+                </div>
             </div>
 
             <!-- </div> -->
